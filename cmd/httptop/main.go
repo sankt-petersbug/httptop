@@ -35,8 +35,8 @@ func NewRootCommand() *cobra.Command {
 
 	flags := cmd.Flags()
 
-	flags.StringVarP(&opt.fpath, "fpath", "f", "/var/log/access.log", "Log filepath (default is /var/log/access.log)")
-	flags.IntVarP(&opt.rateLimit, "ratelimit", "r", 10, "Request rate limit (default is 10 req/s)")
+	flags.StringVarP(&opt.fpath, "fpath", "f", "/var/log/access.log", "Log filepath")
+	flags.IntVarP(&opt.rateLimit, "ratelimit", "r", 10, "Request rate limit")
 
 	return cmd
 }
